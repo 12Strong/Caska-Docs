@@ -112,13 +112,13 @@
   "navbar": {
     "actions": {
       "primary": {
-        "title": "Sign In",
-        "link": "https://go.caska.app/signin"
+        "title": "Get Started",
+        "link": "https://go.caska.app/signup"
       },
       "links": [
         {
-          "title": "Sign Up",
-          "link": "https://go.caska.app/signup"
+          "title": "Sign In",
+          "link": "https://go.caska.app/signin"
         }
       ]
     }
