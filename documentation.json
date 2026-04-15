@@ -2,10 +2,14 @@
   "name": "Caska Help Documentation",
   "colors": {
     "light": {
-      "brand": "#F97316"
+      "brand": "#D4943A",
+      "heading": "#1E4848",
+      "text": "#1E2A2A"
     },
     "dark": {
-      "brand": "#FDBA74"
+      "brand": "#D4943A",
+      "heading": "#3D8A8A",
+      "text": "#c1c1c1"
     }
   },
   "navigation": {
@@ -100,5 +104,9 @@
     ]
   },
   "title": "Caska Help Documentation",
-  "description": "Knowledge base, help articles and set up guides for Caska, an operations software platform for food manufacturers"
+  "description": "Knowledge base, help articles and set up guides for Caska, an operations software platform for food manufacturers",
+  "template": "atlas",
+  "favicon": "https://blob-cdn.documentation.ai/org-e8e147e9-51d0-4351-8b1d-cf9263354376/doc-35746b32-443c-4d13-af45-c82deb2754f7/1776270151287-tyd8a9x58x-favicon.svg?fm=auto&auto=compress%2Cformat",
+  "logo-light": "https://blob-cdn.documentation.ai/org-e8e147e9-51d0-4351-8b1d-cf9263354376/doc-35746b32-443c-4d13-af45-c82deb2754f7/1776270164216-jmc43zb27zb-Caska-Logo.svg?fm=auto&auto=compress%2Cformat",
+  "logo-dark": "https://blob-cdn.documentation.ai/org-e8e147e9-51d0-4351-8b1d-cf9263354376/doc-35746b32-443c-4d13-af45-c82deb2754f7/1776270164216-jmc43zb27zb-Caska-Logo.svg?fm=auto&auto=compress%2Cformat"
 }
