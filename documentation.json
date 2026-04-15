@@ -1,5 +1,5 @@
 {
-  "name": "Starter Kit",
+  "name": "Caska Help Documentation",
   "colors": {
     "light": {
       "brand": "#F97316"
@@ -98,5 +98,7 @@
         ]
       }
     ]
-  }
+  },
+  "title": "Caska Help Documentation",
+  "description": "Knowledge base, help articles and set up guides for Caska, an operations software platform for food manufacturers"
 }
