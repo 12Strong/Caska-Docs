@@ -1,5 +1,11 @@
 {
   "name": "Caska Help Documentation",
+  "title": "Caska Help Documentation",
+  "description": "Knowledge base, help articles and set up guides for Caska, an operations software platform for food manufacturers",
+  "template": "classic",
+  "favicon": "https://blob-cdn.documentation.ai/org-e8e147e9-51d0-4351-8b1d-cf9263354376/doc-35746b32-443c-4d13-af45-c82deb2754f7/1776270151287-tyd8a9x58x-favicon.svg?fm=auto&auto=compress%2Cformat",
+  "logo-light": "https://blob-cdn.documentation.ai/org-e8e147e9-51d0-4351-8b1d-cf9263354376/doc-35746b32-443c-4d13-af45-c82deb2754f7/1776270424058-xv7k4gtp7j-Caska-logo-color.png?fm=auto&auto=compress%2Cformat",
+  "logo-dark": "https://blob-cdn.documentation.ai/org-e8e147e9-51d0-4351-8b1d-cf9263354376/doc-35746b32-443c-4d13-af45-c82deb2754f7/1776270435528-qlintdqvsrh-Caska-logo-reverse.png?fm=auto&auto=compress%2Cformat",
   "colors": {
     "light": {
       "brand": "#D4943A",
@@ -12,103 +18,6 @@
       "text": "#c1c1c1"
     }
   },
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Documentation",
-        "icon": "book",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "icon": "rocket",
-            "pages": [
-              {
-                "title": "Introduction",
-                "path": "introduction",
-                "icon": "home"
-              },
-              {
-                "title": "Quickstart",
-                "path": "quickstart",
-                "icon": "zap"
-              }
-            ]
-          },
-          {
-            "group": "Core Concepts",
-            "pages": [
-              {
-                "title": "Features",
-                "path": "features",
-                "icon": "clipboard-list"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Help Center",
-        "icon": "help-circle",
-        "pages": [
-          {
-            "title": "Help Center",
-            "path": "help-center",
-            "icon": "home"
-          },
-          {
-            "group": "FAQs",
-            "icon": "help-circle",
-            "expandable": false,
-            "pages": [
-              {
-                "title": "Getting Started FAQ",
-                "path": "help-center/faq/getting-started"
-              }
-            ]
-          },
-          {
-            "group": "Troubleshooting",
-            "icon": "alert-triangle",
-            "expandable": false,
-            "pages": [
-              {
-                "title": "Login Issue",
-                "path": "help-center/troubleshooting/login-issue"
-              }
-            ]
-          },
-          {
-            "group": "Guides",
-            "icon": "book-open",
-            "expandable": false,
-            "pages": [
-              {
-                "title": "Create a Product",
-                "path": "help-center/guides/create-product"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Changelog",
-        "icon": "clock",
-        "pages": [
-          {
-            "title": "Changelog",
-            "path": "changelog",
-            "icon": "history"
-          }
-        ]
-      }
-    ]
-  },
-  "title": "Caska Help Documentation",
-  "description": "Knowledge base, help articles and set up guides for Caska, an operations software platform for food manufacturers",
-  "template": "classic",
-  "favicon": "https://blob-cdn.documentation.ai/org-e8e147e9-51d0-4351-8b1d-cf9263354376/doc-35746b32-443c-4d13-af45-c82deb2754f7/1776270151287-tyd8a9x58x-favicon.svg?fm=auto&auto=compress%2Cformat",
-  "logo-light": "https://blob-cdn.documentation.ai/org-e8e147e9-51d0-4351-8b1d-cf9263354376/doc-35746b32-443c-4d13-af45-c82deb2754f7/1776270424058-xv7k4gtp7j-Caska-logo-color.png?fm=auto&auto=compress%2Cformat",
-  "logo-dark": "https://blob-cdn.documentation.ai/org-e8e147e9-51d0-4351-8b1d-cf9263354376/doc-35746b32-443c-4d13-af45-c82deb2754f7/1776270435528-qlintdqvsrh-Caska-logo-reverse.png?fm=auto&auto=compress%2Cformat",
   "navbar": {
     "actions": {
       "primary": {
@@ -130,5 +39,329 @@
     "ga4": {
       "measurementId": "G-55F09572P6"
     }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Getting Started",
+        "icon": "rocket",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "introduction",
+                "icon": "star"
+              },
+              {
+                "title": "Core Concepts",
+                "path": "getting-started/core-concepts",
+                "icon": "layers"
+              },
+              {
+                "title": "Setting Up Your Account",
+                "path": "getting-started/account-setup",
+                "icon": "settings"
+              },
+              {
+                "title": "Inviting Your Team",
+                "path": "getting-started/inviting-your-team",
+                "icon": "user-plus"
+              },
+              {
+                "title": "User Roles",
+                "path": "getting-started/user-roles",
+                "icon": "shield"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Guides",
+        "icon": "book-open",
+        "groups": [
+          {
+            "group": "Guides",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "Creating Your First Product",
+                "path": "guides/creating-your-first-product",
+                "icon": "package"
+              },
+              {
+                "title": "Creating Your First Order",
+                "path": "guides/creating-your-first-order",
+                "icon": "shopping-cart"
+              },
+              {
+                "title": "Setting Up a Follow-Up Campaign",
+                "path": "guides/setting-up-follow-up",
+                "icon": "mail"
+              },
+              {
+                "title": "Importing Your Data",
+                "path": "guides/importing-your-data",
+                "icon": "upload"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Features",
+        "icon": "zap",
+        "groups": [
+          {
+            "group": "Customers",
+            "icon": "users",
+            "expandable": true,
+            "pages": [
+              {
+                "title": "Managing Customers",
+                "path": "customers/managing-customers",
+                "icon": "users"
+              },
+              {
+                "title": "Customer Categories",
+                "path": "customers/categories",
+                "icon": "tag"
+              },
+              {
+                "title": "Engagement Statuses",
+                "path": "customers/engagement-statuses",
+                "icon": "activity"
+              },
+              {
+                "title": "Custom Fields",
+                "path": "customers/custom-fields",
+                "icon": "sliders"
+              },
+              {
+                "title": "Importing Customers via CSV",
+                "path": "customers/importing-customers",
+                "icon": "upload"
+              }
+            ]
+          },
+          {
+            "group": "Products",
+            "icon": "package",
+            "expandable": true,
+            "pages": [
+              {
+                "title": "Managing Products",
+                "path": "products/managing-products",
+                "icon": "package"
+              },
+              {
+                "title": "Product Categories",
+                "path": "products/product-categories",
+                "icon": "tag"
+              },
+              {
+                "title": "Recipe Ingredients & Costing",
+                "path": "products/recipe-costing",
+                "icon": "flask-conical"
+              },
+              {
+                "title": "Tracking Product Stock",
+                "path": "products/tracking-stock",
+                "icon": "bar-chart-2"
+              },
+              {
+                "title": "SKU, GTIN, and Barcode Fields",
+                "path": "products/sku-barcode",
+                "icon": "scan-barcode"
+              }
+            ]
+          },
+          {
+            "group": "Inventory",
+            "icon": "warehouse",
+            "expandable": true,
+            "pages": [
+              {
+                "title": "Managing Inventory",
+                "path": "inventory/managing-inventory",
+                "icon": "warehouse"
+              },
+              {
+                "title": "Inventory Categories",
+                "path": "inventory/inventory-categories",
+                "icon": "tag"
+              },
+              {
+                "title": "Stock Movements",
+                "path": "inventory/stock-movements",
+                "icon": "arrow-right-left"
+              },
+              {
+                "title": "Lot Tracking",
+                "path": "inventory/lot-tracking",
+                "icon": "scan"
+              }
+            ]
+          },
+          {
+            "group": "Orders",
+            "icon": "shopping-cart",
+            "expandable": true,
+            "pages": [
+              {
+                "title": "Managing Orders",
+                "path": "orders/managing-orders",
+                "icon": "shopping-cart"
+              },
+              {
+                "title": "Order Auto-Numbering",
+                "path": "orders/order-numbering",
+                "icon": "hash"
+              },
+              {
+                "title": "Custom Fields for Orders",
+                "path": "orders/order-custom-fields",
+                "icon": "sliders"
+              },
+              {
+                "title": "Importing Orders",
+                "path": "orders/importing-orders",
+                "icon": "upload"
+              }
+            ]
+          },
+          {
+            "group": "Batches",
+            "icon": "layers",
+            "expandable": true,
+            "pages": [
+              {
+                "title": "Managing Batches",
+                "path": "batches/managing-batches",
+                "icon": "layers"
+              }
+            ]
+          },
+          {
+            "group": "Timesheets",
+            "icon": "clock",
+            "expandable": true,
+            "pages": [
+              {
+                "title": "Managing Timesheets",
+                "path": "timesheets/managing-timesheets",
+                "icon": "clock"
+              }
+            ]
+          },
+          {
+            "group": "Fundraisers",
+            "icon": "heart-handshake",
+            "expandable": true,
+            "pages": [
+              {
+                "title": "Managing Fundraisers",
+                "path": "fundraisers/managing-fundraisers",
+                "icon": "heart-handshake"
+              }
+            ]
+          },
+          {
+            "group": "Follow-Up",
+            "icon": "mail",
+            "expandable": true,
+            "pages": [
+              {
+                "title": "How Follow-Up Works",
+                "path": "follow-up/how-follow-up-works",
+                "icon": "mail"
+              }
+            ]
+          },
+          {
+            "group": "Reports",
+            "icon": "bar-chart-2",
+            "expandable": true,
+            "pages": [
+              {
+                "title": "Reports Overview",
+                "path": "reports/reports-overview",
+                "icon": "bar-chart-2"
+              }
+            ]
+          },
+          {
+            "group": "Settings",
+            "icon": "settings",
+            "expandable": true,
+            "pages": [
+              {
+                "title": "Notification Alerts",
+                "path": "settings/notifications",
+                "icon": "bell"
+              },
+              {
+                "title": "Communication Settings",
+                "path": "settings/communication",
+                "icon": "send"
+              },
+              {
+                "title": "CSV Import & Export",
+                "path": "import-export/csv-import-export",
+                "icon": "file-spreadsheet"
+              }
+            ]
+          },
+          {
+            "group": "Account & Billing",
+            "icon": "credit-card",
+            "expandable": true,
+            "pages": [
+              {
+                "title": "Account Security",
+                "path": "account/account-security",
+                "icon": "shield"
+              },
+              {
+                "title": "Billing & Subscription",
+                "path": "account/billing-subscription",
+                "icon": "credit-card"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Mobile App",
+        "icon": "smartphone",
+        "groups": [
+          {
+            "group": "Mobile App",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "Mobile App Overview",
+                "path": "mobile-app/mobile-overview",
+                "icon": "smartphone"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "icon": "clock",
+        "pages": [
+          {
+            "title": "Changelog",
+            "path": "changelog",
+            "icon": "history"
+          }
+        ]
+      }
+    ]
   }
 }

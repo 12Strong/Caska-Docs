@@ -1,0 +1,61 @@
+---
+title: CSV Import & Export
+description: Import and export Customers, Products, Inventory, and Orders using CSV files — all processing happens in the browser with no external data transfer.
+---
+
+Caska supports CSV import and export for Customers, Products, Inventory, and Orders. All processing happens in the browser — no data is sent to an external service during import.
+
+## Importing data
+
+CSV import is available from the list view of each supported module. Look for the **Import** button in the top-right controls area.
+
+<Steps>
+  <Step title="Download the sample template" titleType="p">
+    Open the Import dialog and download the sample template for the correct column names and format.
+  </Step>
+
+  <Step title="Format your data" titleType="p">
+    Match your data to the template columns. Save as a `.csv` file with UTF-8 encoding.
+  </Step>
+
+  <Step title="Upload and review" titleType="p">
+    Upload your file. You'll see a summary showing how many records were imported and which rows were skipped with reasons.
+  </Step>
+
+  <Step title="Confirm to complete" titleType="p">
+    Click **Confirm** to finalize. Skipped rows can be corrected and re-imported in a separate file.
+  </Step>
+</Steps>
+
+## What supports import
+
+| Module | Import |
+|---|---|
+| Customers | ✓ |
+| Products | ✓ |
+| Inventory | ✓ |
+| Orders | ✓ |
+
+## Exporting data
+
+Click the **Export** button on any module list to download a CSV of all records, including custom field values. The export reflects your current filter and column settings.
+
+## Tips for a clean import
+
+- Use UTF-8 encoding (the default for most spreadsheet apps when saving as CSV)
+- Format dates as `YYYY-MM-DD`
+- Extra columns outside the template are ignored
+- For large datasets, consider splitting into batches of 500–1000 rows
+
+---
+
+## Get Involved
+
+<Columns cols="2">
+  <Card title="Submit Feedback" href="mailto:support@caska.app" icon="message-circle" horizontal="false" target="_self">
+    Share your ideas for new features or improvements.
+  </Card>
+  <Card title="Report Issues" href="https://go.caska.app/help" icon="bug" horizontal="false" target="_self">
+    Help us fix bugs faster by reporting any issues to us in your account.
+  </Card>
+</Columns>
