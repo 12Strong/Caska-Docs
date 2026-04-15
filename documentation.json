@@ -122,5 +122,13 @@
         }
       ]
     }
+  },
+  "integrations": {
+    "gtm": {
+      "tagId": "GTM-K2M4BN24"
+    },
+    "ga4": {
+      "measurementId": "G-55F09572P6"
+    }
   }
 }
