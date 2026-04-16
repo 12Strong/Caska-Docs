@@ -17,48 +17,68 @@ You'll need outgoing email configured in Caska before any emails can send. If yo
 
 <Steps>
   <Step title="Go to Settings → Communication" titleType="p">
-    Find the Communication section in your account settings.
+    Find the Communication section in your account settings. Follow-up sequences are turned off by default and turning them on will show additional settings below.
   </Step>
 
-  <Step title="Configure the trigger" titleType="p">
-    Set **Days since last order** — this is how many days of inactivity before the first follow-up email sends. For example, 30 days means any customer who hasn't ordered in 30 days enters the queue.
+<Step title="Configure the schedule" titleType="p">
+  Set **Days since last order** — this is how many days of inactivity before the
+  first follow-up email sends. For example, 30 days means any customer who
+  hasn't ordered in 30 days enters the queue.
+</Step>
+
+<Step title="Set the follow-up intervals" titleType="p">
+  Define when subsequent emails send in the sequence and how many emails to send
+  in total. The system works through the sequence in order until the customer
+  re-orders or you reset them.
+</Step>
+
+    <Step title="Set the email timing and amount" titleType="p">
+    Define how many follow up emails will send each day and what time of day they will send.
+
+  </Step>
+    
+    <Step title="Configure the sending settings" titleType="p">
+    Choose whether Caska will send the emails on your behalf (has a higher chance of being seen as spam) or connect to an email address you own and Caska will use it to send (comes directly from you.) If sending from an email address you own, enter the connection details.
   </Step>
 
-  <Step title="Set the follow-up intervals" titleType="p">
-    Define when subsequent emails send after the first — for example:
-
-    - Follow-up 1: 30 days
-    - Follow-up 2: 60 days
-    - Follow-up 3: 90 days
-
-    The system works through the sequence in order until the customer re-orders or you reset them.
-  </Step>
-
-  <Step title="Write the email content for each follow-up" titleType="p">
-    Enter a subject line and email body for each follow-up number. Keep these personal and direct — remind the customer you exist and make it easy to reply.
-  </Step>
+<Step title="Create your email signature" titleType="p">
+  Design your email signature to match what you use in your regular email.
+</Step>
 
   <Step title="Save" titleType="p">
     The system activates and begins monitoring customer order activity.
   </Step>
 </Steps>
 
-## Monitoring the queue
+## Creating the Follow-up Email Messages
+
+Go to **Settings → Communication → Follow-up Emails** to create sets of subject lines and email bodys to send to your customers. Caska will randomly choose one subject line and one email body to send, making sure that the messages mimic being sent directly from you.
+
+Click on **+ADD SUBJECT** to add subject lines or click on the trash icon to remove existing options.
+
+Click on **+ADD BODY** to add email body copy or click on the trash icon to remove existing options.
+
+You can use {{customer_name}} and {{company_name}} as personalisation tokens in your messages, but use sparingly as there are no fallback values for these.
+
+Click on **Save Templates** when you are done.
+
+## Monitoring the queue and being notified of follow-ups going out
 
 Go to **Follow-Up** in the main navigation (Owners and Admins only) to see:
 
-- Which customers are in the queue
+- Which customers have had emails sent to them
 - Which follow-up number they're on
-- When their next email is scheduled
 
-From here you can manually remove customers, mark them as re-engaged, or review who's been contacted.
+Each day an email will be sent to the account owner outlining who has received follow-up emails that day and the content of those emails so you can keep track of the re-engagement emails being sent on your behalf.
 
 ## Managing opt-outs
 
-If a specific customer should never receive follow-up emails, remove them from the queue in the Follow-Up dashboard. They won't re-enter unless you reset their status.
+If a specific customer should never receive follow-up emails, edit their customer record to uncheck the "Allow follow-up contact". If unchecked, no follow up emails will be sent to the customer.
 
 <Callout kind="info">
-  Follow-up emails are sent via Caska's own email system (Mailgun) for reliability — not through your custom SMTP, even if you've configured one.
+  Follow-up emails should be configured to use your SMTP email settings. This
+  will ensure that they are alwasy delivered. Emails sent by Caska's own email
+  system have a much higher chance of being sent to a spam or junk folder.
 </Callout>
 
 ---
@@ -66,10 +86,22 @@ If a specific customer should never receive follow-up emails, remove them from t
 ## Get Involved
 
 <Columns cols="2">
-  <Card title="Submit Feedback" href="mailto:support@caska.app" icon="message-circle" horizontal="false" target="_self">
+  <Card
+    title="Submit Feedback"
+    href="mailto:support@caska.app"
+    icon="message-circle"
+    horizontal="false"
+    target="_self"
+  >
     Share your ideas for new features or improvements.
   </Card>
-  <Card title="Report Issues" href="https://go.caska.app/help" icon="bug" horizontal="false" target="_self">
+  <Card
+    title="Report Issues"
+    href="https://go.caska.app/help"
+    icon="bug"
+    horizontal="false"
+    target="_self"
+  >
     Help us fix bugs faster by reporting any issues to us in your account.
   </Card>
 </Columns>

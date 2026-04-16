@@ -20,7 +20,7 @@ The process is the same for each module:
 
 <Steps>
   <Step title="Download the sample template" titleType="p">
-    Go to the relevant module list (e.g. Customers), click **Import**, and download the sample CSV template. This shows you the exact column names and format Caska expects.
+    Go to the relevant module list (e.g. Customers), click **Import**, and download the sample CSV template. This shows you the exact column names and format Caska expects. If you have set up custom fields alread, these will display as columns in the CSV.
   </Step>
 
   <Step title="Format your data" titleType="p">
@@ -30,11 +30,13 @@ The process is the same for each module:
     - Dates in `YYYY-MM-DD` format
     - UTF-8 encoding (the default when saving as CSV from Excel or Google Sheets)
     - Extra columns are ignored
+
   </Step>
 
-  <Step title="Upload and review" titleType="p">
-    Click **Import**, upload your file, and review the import summary. You'll see how many records were created and which rows were skipped with reasons.
-  </Step>
+<Step title="Upload and review" titleType="p">
+  Click **Import**, upload your file, and review the import summary. You'll see
+  how many records were created and which rows were skipped with reasons.
+</Step>
 
   <Step title="Fix and re-import skipped rows" titleType="p">
     Correct any problem rows in a new CSV and re-import. Caska skips bad rows rather than failing the whole file, so your clean data always gets through.
@@ -44,24 +46,29 @@ The process is the same for each module:
 ## Module-specific notes
 
 **Customers**
+
 - Required field: Company Name
 - Categories must already exist in Settings before they'll match on import
 
 **Products**
+
 - Required field: Product Name
 - Recipes and ingredient links cannot be imported via CSV — add these manually after import
 
 **Inventory**
+
 - Required field: Item Name
-- Lot data is not imported via CSV — add lots manually after import
 
 **Orders**
+
 - Required field: Customer Name
 - Customer names must exactly match existing customer records to link correctly
 - Line items follow a specific format — refer closely to the template
 
 <Callout kind="tip">
-  For large imports (thousands of records), split your CSV into batches of 500–1000 rows. Smaller files are easier to troubleshoot if something goes wrong.
+  For large imports (thousands of records), split your CSV into batches of
+  500–1000 rows. Smaller files are easier to troubleshoot if something goes
+  wrong.
 </Callout>
 
 ## After importing
@@ -75,10 +82,22 @@ The process is the same for each module:
 ## Get Involved
 
 <Columns cols="2">
-  <Card title="Submit Feedback" href="mailto:support@caska.app" icon="message-circle" horizontal="false" target="_self">
+  <Card
+    title="Submit Feedback"
+    href="mailto:support@caska.app"
+    icon="message-circle"
+    horizontal="false"
+    target="_self"
+  >
     Share your ideas for new features or improvements.
   </Card>
-  <Card title="Report Issues" href="https://go.caska.app/help" icon="bug" horizontal="false" target="_self">
+  <Card
+    title="Report Issues"
+    href="https://go.caska.app/help"
+    icon="bug"
+    horizontal="false"
+    target="_self"
+  >
     Help us fix bugs faster by reporting any issues to us in your account.
   </Card>
 </Columns>
