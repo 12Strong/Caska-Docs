@@ -1,0 +1,62 @@
+---
+title: Importing Orders
+description: Import historical order data into Caska via CSV when migrating from a spreadsheet or another system.
+---
+
+You can import historical order data into Caska using a CSV file — useful when migrating from a spreadsheet or another system.
+
+## Before you import
+
+Format your CSV with these columns:
+
+- **Customer Name** *(required)*
+- Order Number
+- Due Date
+- Status
+- Product Name, Quantity, Unit Price *(one row per line item — refer to the sample template for the exact format)*
+- Notes
+
+<Callout kind="tip">
+  Download the **sample template** from the Import dialog before building your CSV — it shows the exact column names and expected format.
+</Callout>
+
+## How to import
+
+<Steps>
+  <Step title="Go to Orders and click Import" titleType="p">
+    Find the **Import** button in the top-right of the Orders list.
+  </Step>
+
+  <Step title="Upload your CSV file" titleType="p">
+    Select and upload your file.
+  </Step>
+
+  <Step title="Review the import summary" titleType="p">
+    Check how many records were imported and review any skipped rows.
+  </Step>
+
+  <Step title="Confirm to complete" titleType="p">
+    Click **Confirm** to finalize the import.
+  </Step>
+</Steps>
+
+## After importing
+
+Review the imported orders in your list.
+
+<Callout kind="info">
+  Imported orders match customers by name. If the customer name exactly matches an existing record, they'll be linked. If not, you may need to manually update the customer association on those orders.
+</Callout>
+
+---
+
+## Get Involved
+
+<Columns cols="2">
+  <Card title="Submit Feedback" href="mailto:support@caska.app" icon="message-circle" horizontal="false" target="_self">
+    Share your ideas for new features or improvements.
+  </Card>
+  <Card title="Report Issues" href="https://go.caska.app/help" icon="bug" horizontal="false" target="_self">
+    Help us fix bugs faster by reporting any issues to us in your account.
+  </Card>
+</Columns>

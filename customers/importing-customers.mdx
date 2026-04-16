@@ -1,0 +1,63 @@
+---
+title: Importing Customers via CSV
+description: Migrate your existing customer list into Caska using a CSV file, with guidance on formatting and what to do if rows are skipped.
+---
+
+If you're migrating from a spreadsheet or another system, you can import your customer list into Caska using a CSV file.
+
+## Before you import
+
+Make sure your CSV is formatted correctly:
+
+- The first row should be column headers
+- Required column: **Company Name**
+- Optional columns: Contact Name, Email, Phone, Billing Address, Shipping Address, Category, Discount, Notes
+
+<Callout kind="tip">
+  Download the **sample template** from the Import dialog to get the exact column names and format before building your CSV.
+</Callout>
+
+## How to import
+
+<Steps>
+  <Step title="Go to Customers and click Import" titleType="p">
+    Find the **Import** button in the top-right of the Customers list.
+  </Step>
+
+  <Step title="Upload your CSV file" titleType="p">
+    Select your file. Caska processes it immediately.
+  </Step>
+
+  <Step title="Review the import summary" titleType="p">
+    You'll see how many records were imported and which rows were skipped, with reasons for any errors.
+  </Step>
+
+  <Step title="Confirm to complete" titleType="p">
+    Click **Confirm** to finalize the import.
+  </Step>
+</Steps>
+
+<Callout kind="info">
+  Caska skips rows with errors rather than failing the whole import. Fix problem rows in a separate CSV and re-import.
+</Callout>
+
+## After importing
+
+Review your customer list to confirm the data looks correct. If any records were skipped, check the error details, correct those rows in a new CSV, and re-import them.
+
+## Exporting customers
+
+To export your customer list, click the **Export** button on the Customers list. This downloads all current customer records including any custom field values.
+
+---
+
+## Get Involved
+
+<Columns cols="2">
+  <Card title="Submit Feedback" href="mailto:support@caska.app" icon="message-circle" horizontal="false" target="_self">
+    Share your ideas for new features or improvements.
+  </Card>
+  <Card title="Report Issues" href="https://go.caska.app/help" icon="bug" horizontal="false" target="_self">
+    Help us fix bugs faster by reporting any issues to us in your account.
+  </Card>
+</Columns>

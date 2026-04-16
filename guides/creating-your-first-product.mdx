@@ -1,0 +1,73 @@
+---
+title: Creating Your First Product
+description: A step-by-step walkthrough of setting up a product in Caska — from adding inventory ingredients to configuring pricing, costing, and stock tracking.
+---
+
+This guide walks you through setting up a product from scratch in Caska, including linking it to your raw material inventory so stock and costing work automatically.
+
+## Before you start
+
+Make sure you've added the raw materials and packaging for this product in the Inventory module first. The recipe step links to your existing inventory items, so they need to exist before you can attach them.
+
+If you haven't added inventory yet, see [Managing Inventory](/inventory/managing-inventory).
+
+## Step-by-step
+
+<Steps>
+  <Step title="Go to Products and click New Product" titleType="p">
+    Click **Products** in the main navigation, then **New Product**.
+  </Step>
+
+  <Step title="Enter the product name and category" titleType="p">
+    Give the product a clear name — this is what appears in order forms and dropdowns. Assign a category if you've set them up under **Settings → Products**.
+  </Step>
+
+  <Step title="Set pricing" titleType="p">
+    Enter your unit price and select the unit of measure (e.g. per case, per bag, per kg).
+  </Step>
+
+  <Step title="Add SKU and identifiers" titleType="p">
+    Optionally add a SKU, GTIN, or barcode. These are useful for retail buyers and label generation. See [SKU, GTIN, and Barcode Fields](/products/sku-barcode) for details.
+  </Step>
+
+  <Step title="Build the recipe" titleType="p">
+    Scroll to the **Recipe** section. Add each ingredient:
+
+    1. Click **Add Ingredient**
+    2. Select the inventory item
+    3. Enter the quantity used per unit
+
+    Repeat for packaging materials. As you add ingredients, the estimated cost per unit calculates automatically.
+
+    <Callout kind="tip">
+      Make sure your inventory items have accurate unit costs before building the recipe. The cost-per-unit figure is only as accurate as what's in Inventory.
+    </Callout>
+  </Step>
+
+  <Step title="Add a product image" titleType="p">
+    Optional, but recommended if you want visual identification in lists.
+  </Step>
+
+  <Step title="Save" titleType="p">
+    Click **Save**. Your product is now live and available in order forms.
+  </Step>
+</Steps>
+
+## After saving
+
+- Set your **product sort order** by dragging it into position in the product list — this controls where it appears in order forms
+- Add any **custom fields** specific to your business under **Settings → Products**
+- If this product is seasonal or not yet ready, mark it **inactive** to hide it from order forms until you need it
+
+---
+
+## Get Involved
+
+<Columns cols="2">
+  <Card title="Submit Feedback" href="mailto:support@caska.app" icon="message-circle" horizontal="false" target="_self">
+    Share your ideas for new features or improvements.
+  </Card>
+  <Card title="Report Issues" href="https://go.caska.app/help" icon="bug" horizontal="false" target="_self">
+    Help us fix bugs faster by reporting any issues to us in your account.
+  </Card>
+</Columns>

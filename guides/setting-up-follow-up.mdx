@@ -1,0 +1,75 @@
+---
+title: Setting Up a Follow-Up Campaign
+description: A walkthrough of configuring Caska's automated re-engagement system — from setting email sequences and intervals to monitoring the Follow-Up dashboard.
+---
+
+This guide walks you through setting up Caska's automated Follow-Up system so customers who haven't ordered in a while receive re-engagement emails on a schedule you control.
+
+## How it works
+
+Caska monitors each customer's last order date. When enough time has passed (as defined by your settings), it queues a follow-up email. If the customer still hasn't ordered, additional follow-ups continue on your defined schedule until they re-order or you manually remove them from the queue.
+
+## Before you start
+
+You'll need outgoing email configured in Caska before any emails can send. If you haven't set this up yet, see [Communication Settings](/settings/communication).
+
+## Setting up the sequence
+
+<Steps>
+  <Step title="Go to Settings → Communication" titleType="p">
+    Find the Communication section in your account settings.
+  </Step>
+
+  <Step title="Configure the trigger" titleType="p">
+    Set **Days since last order** — this is how many days of inactivity before the first follow-up email sends. For example, 30 days means any customer who hasn't ordered in 30 days enters the queue.
+  </Step>
+
+  <Step title="Set the follow-up intervals" titleType="p">
+    Define when subsequent emails send after the first — for example:
+
+    - Follow-up 1: 30 days
+    - Follow-up 2: 60 days
+    - Follow-up 3: 90 days
+
+    The system works through the sequence in order until the customer re-orders or you reset them.
+  </Step>
+
+  <Step title="Write the email content for each follow-up" titleType="p">
+    Enter a subject line and email body for each follow-up number. Keep these personal and direct — remind the customer you exist and make it easy to reply.
+  </Step>
+
+  <Step title="Save" titleType="p">
+    The system activates and begins monitoring customer order activity.
+  </Step>
+</Steps>
+
+## Monitoring the queue
+
+Go to **Follow-Up** in the main navigation (Owners and Admins only) to see:
+
+- Which customers are in the queue
+- Which follow-up number they're on
+- When their next email is scheduled
+
+From here you can manually remove customers, mark them as re-engaged, or review who's been contacted.
+
+## Managing opt-outs
+
+If a specific customer should never receive follow-up emails, remove them from the queue in the Follow-Up dashboard. They won't re-enter unless you reset their status.
+
+<Callout kind="info">
+  Follow-up emails are sent via Caska's own email system (Mailgun) for reliability — not through your custom SMTP, even if you've configured one.
+</Callout>
+
+---
+
+## Get Involved
+
+<Columns cols="2">
+  <Card title="Submit Feedback" href="mailto:support@caska.app" icon="message-circle" horizontal="false" target="_self">
+    Share your ideas for new features or improvements.
+  </Card>
+  <Card title="Report Issues" href="https://go.caska.app/help" icon="bug" horizontal="false" target="_self">
+    Help us fix bugs faster by reporting any issues to us in your account.
+  </Card>
+</Columns>

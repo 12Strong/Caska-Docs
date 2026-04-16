@@ -1,0 +1,65 @@
+---
+title: Core Concepts
+description: Understand how Caska is organized, how its modules connect, and the key ideas behind the platform before you dive in.
+---
+
+## How Caska is structured
+
+Caska is organized around the core operational areas of a food manufacturing business. Each area has its own module, and the modules are designed to work together — so your inventory connects to your products, your products connect to your orders, and your orders connect to your customers.
+
+Understanding how these pieces relate to each other makes everything easier to use.
+
+## The module map
+
+Here's how Caska's modules connect:
+
+**Inventory → Products → Orders**
+
+Raw materials live in **Inventory**. Products are built from those materials using recipes in **Products**. When you fulfill an **Order**, Caska can trace the chain back — tracking what stock was consumed.
+
+**Customers → Orders → Follow-Up**
+
+**Customers** are the accounts you sell to. **Orders** are tied to customers. The **Follow-Up** system monitors customer ordering patterns and sends re-engagement emails to accounts that have gone quiet.
+
+**Batches → Products**
+
+If your plan includes batch production, **Batches** tracks your production runs. Each batch is linked to a product and records how many units you produced.
+
+**Timesheets → Team**
+
+**Timesheets** tracks employee hours against pay periods. It's standalone from the other operational modules but connects to your team member accounts.
+
+**Reports → Everything**
+
+**Reports** pulls data from orders, inventory, products, customers, and production to give you a cross-module view of your business performance.
+
+## Accounts and users
+
+Caska is multi-tenant — each business runs in its own account. Your data is isolated and only visible to users on your account.
+
+Within an account, each person gets their own login and role. Roles control what they can see and do. See [User Roles](/getting-started/user-roles) for the breakdown.
+
+## Settings are per-account
+
+Categories, custom fields, notification preferences, and communication settings are all configured per account. That means you set them up once for your business, and they apply consistently for everyone on your team.
+
+## Custom fields
+
+Almost every module in Caska supports custom fields — additional data points you define yourself. If there's something specific to your operation that doesn't fit a standard field, a custom field handles it. The same pattern applies everywhere: define the field in Settings, fill it in on each record.
+
+## Plans and module access
+
+Some modules (like Batches) are gated by your plan. If a module isn't visible in your navigation, it may not be included in your current plan. Contact support to learn more about what's available on each plan.
+
+---
+
+## Get Involved
+
+<Columns cols="2">
+  <Card title="Submit Feedback" href="mailto:support@caska.app" icon="message-circle" horizontal="false" target="_self">
+    Share your ideas for new features or improvements.
+  </Card>
+  <Card title="Report Issues" href="https://go.caska.app/help" icon="bug" horizontal="false" target="_self">
+    Help us fix bugs faster by reporting any issues to us in your account.
+  </Card>
+</Columns>

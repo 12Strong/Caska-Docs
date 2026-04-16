@@ -1,0 +1,63 @@
+---
+title: How the Follow-Up System Works
+description: Automate re-engagement outreach to customers who haven't ordered recently using Caska's built-in follow-up email sequences.
+---
+
+The Follow-Up module automates outreach to customers who haven't ordered in a while. It sends a sequence of reminder emails on a schedule you define — so staying in front of your accounts doesn't rely on memory.
+
+## The concept
+
+Each customer has a **re-engagement date** — calculated from their last order. When that date passes, Caska queues a follow-up email and continues sending on your defined schedule until the customer re-orders or you manually reset them.
+
+## Setting up the system
+
+<Steps>
+  <Step title="Go to Settings → Communication" titleType="p">
+    Find the Communication section in your account settings.
+  </Step>
+
+  <Step title="Configure re-engagement settings" titleType="p">
+    - **Days since last order** before the first follow-up triggers
+    - **Follow-up intervals** — e.g. first email at 30 days, second at 60, third at 90
+    - **Email subject and body** for each follow-up in the sequence
+  </Step>
+
+  <Step title="Confirm your SMTP is configured" titleType="p">
+    You need outgoing email configured under **Settings → Communication** for emails to send. See [Communication Settings](/settings/communication).
+  </Step>
+
+  <Step title="Save" titleType="p">
+    The system activates and begins monitoring customer order dates.
+  </Step>
+</Steps>
+
+## The Follow-Up dashboard
+
+The **Follow-Up** section in the navigation (Owners and Admins only) shows:
+
+- Customers currently in the re-engagement queue
+- Which follow-up number each customer is on
+- When their next email is scheduled
+
+From here you can manually remove customers from the queue or mark them as re-engaged.
+
+## Opting customers out
+
+Exclude a customer from follow-up emails by removing them from the queue in the Follow-Up dashboard or by updating their engagement status to an excluded status.
+
+<Callout kind="info">
+  Re-engagement emails are sent via Caska's system email (Mailgun), not your custom SMTP — even if you've configured a custom sending address. This ensures reliable delivery for automated sequences.
+</Callout>
+
+---
+
+## Get Involved
+
+<Columns cols="2">
+  <Card title="Submit Feedback" href="mailto:support@caska.app" icon="message-circle" horizontal="false" target="_self">
+    Share your ideas for new features or improvements.
+  </Card>
+  <Card title="Report Issues" href="https://go.caska.app/help" icon="bug" horizontal="false" target="_self">
+    Help us fix bugs faster by reporting any issues to us in your account.
+  </Card>
+</Columns>
