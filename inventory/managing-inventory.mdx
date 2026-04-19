@@ -9,22 +9,23 @@ The Inventory module tracks your raw materials and packaging supplies — quanti
 
 <Steps>
   <Step title="Go to Inventory and click New Item" titleType="p">
-    Click **Inventory** in the main navigation, then **New Item**.
+    Click **Inventory** in the main navigation, then **+ New**.
   </Step>
 
-  <Step title="Fill in the details" titleType="p">
-    - **Item name** *(required)*
-    - Category
-    - Unit of measure (kg, L, each, etc.)
-    - Unit cost
-    - Supplier name and contact info
-    - Current stock quantity
-  </Step>
+<Step title="Fill in the details" titleType="p">
+  - **Item name** *(required)* - Category - Weight/Volume/Length, etc per unit -
+  Unit of measure (kg, L, each, etc.) - Unit cost - Supplier name and contact
+  info - Current stock quantity - Low stock alert threshold
+</Step>
 
   <Step title="Save" titleType="p">
     Click **Save** to create the record.
   </Step>
 </Steps>
+
+## Entering inventory purchase units
+
+Caska is smart enough to navigate the difference between a purchased inventory unit and the unit of measurement for said unit. If you purchase bags of sugar at 4kg per bag, you'll enter 4 and kg in the weight per unit fields and "bag" in the purchase unit name. When restocking, you'll enter the number of bags you restocked (and not the weight of said bags.)
 
 ## Editing an inventory item
 
@@ -34,8 +35,8 @@ Click any item in the list to open its detail page. You can update any field and
 
 Inventory stock changes in two ways:
 
-- **Restocks** — manually log new stock when you receive a delivery. Open the item and use the **Restock** action.
-- **Order fulfillment** — when a product order is fulfilled, Caska automatically decrements the linked raw material quantities based on the product's recipe.
+- **Restocks** — manually log new stock when you receive a delivery. Open the item and use the **Restock** action or click the add stock button on the main inventory page.
+- **Order fulfillment** — when an order is created, Caska automatically decrements the linked raw material quantities based on the product's recipe.
 
 ## Linking inventory to products
 
@@ -46,10 +47,22 @@ To connect an inventory item to a product's recipe, open the product and add the
 ## Get Involved
 
 <Columns cols="2">
-  <Card title="Submit Feedback" href="mailto:support@caska.app" icon="message-circle" horizontal="false" target="_self">
+  <Card
+    title="Submit Feedback"
+    href="mailto:support@caska.app"
+    icon="message-circle"
+    horizontal="false"
+    target="_self"
+  >
     Share your ideas for new features or improvements.
   </Card>
-  <Card title="Report Issues" href="https://go.caska.app/help" icon="bug" horizontal="false" target="_self">
+  <Card
+    title="Report Issues"
+    href="https://go.caska.app/help"
+    icon="bug"
+    horizontal="false"
+    target="_self"
+  >
     Help us fix bugs faster by reporting any issues to us in your account.
   </Card>
 </Columns>

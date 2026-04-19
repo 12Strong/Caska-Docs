@@ -80,9 +80,7 @@
                 "expandable": true,
                 "pages": [
                   { "title": "Managing Customers", "path": "customers/managing-customers" },
-                  { "title": "Customer Categories", "path": "customers/categories" },
                   { "title": "Engagement Statuses", "path": "customers/engagement-statuses" },
-                  { "title": "Custom Fields", "path": "customers/custom-fields" },
                   { "title": "Importing Customers via CSV", "path": "customers/importing-customers" }
                 ]
               },
@@ -105,8 +103,7 @@
                 "pages": [
                   { "title": "Managing Inventory", "path": "inventory/managing-inventory" },
                   { "title": "Inventory Categories", "path": "inventory/inventory-categories" },
-                  { "title": "Stock Movements", "path": "inventory/stock-movements" },
-                  { "title": "Lot Tracking", "path": "inventory/lot-tracking" }
+                  { "title": "Stock Movements", "path": "inventory/stock-movements" }
                 ]
               },
               {
@@ -158,7 +155,7 @@
                 "expandable": true,
                 "pages": [
                   { "title": "Notification Alerts", "path": "settings/notifications" },
-                  { "title": "Communication Settings", "path": "settings/communication" },
+                  { "title": "Custom Fields", "path": "settings/custom-fields" },
                   { "title": "CSV Import & Export", "path": "import-export/csv-import-export" }
                 ]
               },

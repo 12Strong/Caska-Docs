@@ -9,29 +9,34 @@ The Orders module tracks customer orders from creation through to fulfillment. A
 
 <Steps>
   <Step title="Go to Orders and click New Order" titleType="p">
-    Click **Orders** in the main navigation, then **New Order**.
+    Click **Orders** in the main navigation, then **+ New**.
   </Step>
 
-  <Step title="Select a customer" titleType="p">
-    Choose from your existing customer list.
-  </Step>
+<Step title="Select a due date" titleType="p">
+  Choose the date the order is due from the calendar datepicker.
+</Step>
 
-  <Step title="Add line items" titleType="p">
-    Choose products and quantities. The order total calculates automatically based on your product pricing and any customer-level discount.
-  </Step>
+<Step title="Select a customer" titleType="p">
+  Start typing a customer name and choose from the options presented from your
+  existing customer list.
+</Step>
 
-  <Step title="Set a due date and add notes" titleType="p">
-    Add a due date and any reference number or notes relevant to this order.
-  </Step>
+<Step title="Add Products" titleType="p">
+  Choose products and quantities.
+</Step>
+
+<Step title="Add notes or custom fields" titleType="p">
+  Add any custom field information or notes relevant to this order.
+</Step>
 
   <Step title="Save" titleType="p">
-    Click **Save**. Caska assigns a sequential order number automatically.
+    Click **Save**.
   </Step>
 </Steps>
 
-## Order statuses
+## Order Archive
 
-Orders move through statuses as they progress. Update the status manually from the order's edit page. When an order is completed, it moves to the **Archive** tab and the corresponding product stock is decremented.
+When an order is marked as completed, it moves to the **Archive** tab. Orders can be re-activated by clicking on the reactivate icon.
 
 ## Invoice links
 
@@ -42,7 +47,8 @@ You can attach an external invoice link to an order — useful if you're generat
 Completed orders live in the **Archive** tab. Archived orders are read-only and preserved for reporting and history.
 
 <Callout kind="info">
-  Only active products appear in the order line item form. If a product isn't showing up, check that it's marked as active in the Products module.
+  Only active products appear in the order product form. If a product isn't
+  showing up, check that it's marked as active in the Products module.
 </Callout>
 
 ---
@@ -50,10 +56,22 @@ Completed orders live in the **Archive** tab. Archived orders are read-only and 
 ## Get Involved
 
 <Columns cols="2">
-  <Card title="Submit Feedback" href="mailto:support@caska.app" icon="message-circle" horizontal="false" target="_self">
+  <Card
+    title="Submit Feedback"
+    href="mailto:support@caska.app"
+    icon="message-circle"
+    horizontal="false"
+    target="_self"
+  >
     Share your ideas for new features or improvements.
   </Card>
-  <Card title="Report Issues" href="https://go.caska.app/help" icon="bug" horizontal="false" target="_self">
+  <Card
+    title="Report Issues"
+    href="https://go.caska.app/help"
+    icon="bug"
+    horizontal="false"
+    target="_self"
+  >
     Help us fix bugs faster by reporting any issues to us in your account.
   </Card>
 </Columns>

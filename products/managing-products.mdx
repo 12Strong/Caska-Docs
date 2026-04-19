@@ -1,30 +1,33 @@
 ---
 title: Managing Products
-description: Add and manage your product catalogue in Caska, including pricing, recipe ingredients, stock levels, and product ordering.
+description: Add and manage your product catalogue in Caska, including pricing, recipe ingredients, stock level (if batch-create) and profit margins.
 ---
 
-The Products module is your product catalogue. Each record holds pricing, costing, stock level, recipe, and any custom fields you've set up.
+The Products module is your product catalogue. Each record holds pricing, costing, stock level (if batch-create), recipe, and any custom fields you've set up.
 
 ## Adding a product
 
 <Steps>
   <Step title="Go to Products and click New Product" titleType="p">
-    Click **Products** in the main navigation, then **New Product**.
+    Click **Products** in the main navigation, then **+ New**.
   </Step>
 
-  <Step title="Fill in the product details" titleType="p">
-    - **Product name** *(required)*
-    - Category
-    - SKU, GTIN, barcode
-    - Price and unit
-    - Recipe ingredients *(optional — links to Inventory items)*
-    - Packaging materials *(optional)*
-    - Cost per unit *(calculated automatically from recipe, or enter manually)*
-  </Step>
+<Step title="Fill in the product details" titleType="p">
+  - **Product name** *(required)* - Category - SKU, GTIN, public link - Price
+  and unit - Cost per sellable unit *(calculated automatically from recipe, or
+  enter manually)*
+</Step>
 
-  <Step title="Add a product image" titleType="p">
-    Optional but recommended if you want visual identification in lists and forms.
-  </Step>
+<Step title="Add a product image and barcode" titleType="p">
+  Optional but recommended if you want visual identification in lists and forms.
+</Step>
+
+<step title="Complete the product costing calculator fields" titleType="p">
+  Choose your inventory items for both the sellable unit and the recipe batch
+  for your product, entering in the amounts of each inventory item used.
+  Indicate how many individual units a recipe creates and if enabled, how many
+  hours of labour are required.
+</step>
 
   <Step title="Save" titleType="p">
     Click **Save** to create the product.
@@ -33,7 +36,7 @@ The Products module is your product catalogue. Each record holds pricing, costin
 
 ## Editing a product
 
-Click any product in the list to open its detail page. You can edit all fields and view stock movement history from here.
+Click any product in the list to open its detail page. You can edit all fields and view stock movement history from here if your account is set to batch-create.
 
 ## Activating and deactivating products
 
@@ -44,7 +47,8 @@ Products can be marked as **active** or **inactive**. Inactive products are hidd
 Products follow a custom sort order, not alphabetical. Drag and drop rows in the product list to reorder. The order you set here is the order products appear in order forms and dropdowns throughout the app.
 
 <Callout kind="tip">
-  Set your sort order intentionally — your best-sellers or most-used products at the top saves time when creating orders.
+  Set your sort order intentionally — your best-sellers or most-used products at
+  the top saves time when creating orders.
 </Callout>
 
 ---
@@ -52,10 +56,22 @@ Products follow a custom sort order, not alphabetical. Drag and drop rows in the
 ## Get Involved
 
 <Columns cols="2">
-  <Card title="Submit Feedback" href="mailto:support@caska.app" icon="message-circle" horizontal="false" target="_self">
+  <Card
+    title="Submit Feedback"
+    href="mailto:support@caska.app"
+    icon="message-circle"
+    horizontal="false"
+    target="_self"
+  >
     Share your ideas for new features or improvements.
   </Card>
-  <Card title="Report Issues" href="https://go.caska.app/help" icon="bug" horizontal="false" target="_self">
+  <Card
+    title="Report Issues"
+    href="https://go.caska.app/help"
+    icon="bug"
+    horizontal="false"
+    target="_self"
+  >
     Help us fix bugs faster by reporting any issues to us in your account.
   </Card>
 </Columns>

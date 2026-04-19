@@ -9,7 +9,7 @@ Every change to an inventory item's quantity is logged as a stock movement. This
 
 **Restock** — stock added when you receive a delivery. Logged manually when new stock arrives.
 
-**Order fulfillment** — stock consumed when a product order is fulfilled. Caska calculates the quantity to deduct based on the product's recipe and order quantity.
+**Order fulfillment** — stock consumed when a product order is created. Caska calculates the quantity to deduct based on the product's recipe and order quantity.
 
 **Manual adjustment** — a direct correction made from the item's detail page, typically after a physical stocktake.
 
@@ -23,17 +23,29 @@ If your actual stock count doesn't match Caska, you can correct it directly from
 
 ## Low stock alerts
 
-Set a low stock threshold on each item and Caska will email you when stock drops below it. Configure this under **Settings → Notifications**.
+Set a low stock threshold on each item and Caska will email you when stock drops below it. Configure the frequence of these notifications under **Settings → Notifications**.
 
 ---
 
 ## Get Involved
 
 <Columns cols="2">
-  <Card title="Submit Feedback" href="mailto:support@caska.app" icon="message-circle" horizontal="false" target="_self">
+  <Card
+    title="Submit Feedback"
+    href="mailto:support@caska.app"
+    icon="message-circle"
+    horizontal="false"
+    target="_self"
+  >
     Share your ideas for new features or improvements.
   </Card>
-  <Card title="Report Issues" href="https://go.caska.app/help" icon="bug" horizontal="false" target="_self">
+  <Card
+    title="Report Issues"
+    href="https://go.caska.app/help"
+    icon="bug"
+    horizontal="false"
+    target="_self"
+  >
     Help us fix bugs faster by reporting any issues to us in your account.
   </Card>
 </Columns>
